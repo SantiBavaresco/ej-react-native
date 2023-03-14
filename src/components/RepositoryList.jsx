@@ -5,7 +5,7 @@ import RepositoryItem from './RepositoryItem.jsx'
 
 const RepositoryList = () => {
   return (
-    <FlatList
+    <FlatList 
       data={repositories} // de donde saca los datos para hacer la lista
       ItemSeparatorComponent={() => <Text> </Text>} // separa cada card con un espacio "Text"
       renderItem={({ item: repo }) => (

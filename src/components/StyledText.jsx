@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
     fontWeight: theme.fontWeights.normal
   },
   colorPrimary: {
-    color: theme.colors.primary
+    color: theme.colors.textPrimary
   },
   colorSecondary: {
     color: theme.colors.textSecondary

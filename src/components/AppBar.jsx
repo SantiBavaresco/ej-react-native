@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
     paddingTop: Constants.statusBarHeight + 10,
     width: '100%',
     // flex: 1
-},
+  },
   scroll: {
     paddingBottom: 15
   },

@@ -1,8 +1,14 @@
 import React from 'react'
-import { Image, View, StyleSheet } from 'react-native'
+import { Image, View, StyleSheet, Dimensions, Button } from 'react-native'
 import StyledText from './StyledText.jsx'
 import RepositoryStats from './RepositoryStats.jsx'
 import theme from '../theme.js'
+
+const { width } = Dimensions.get('window');
+console.log("width screen", width);
+let imageWidth = 0.5 * width;
+let screenwidth = "100%"
+if (width >= 1000) {imageWidth = width * 0.3; screenwidth = "50%";}
 
 const RepositoryItemHeader = ({ ownerAvatarUrl, fullName, description, language }) => (
   <View style={{ flexDirection: 'row', paddingBottom: 2 }}>
@@ -13,6 +19,7 @@ const RepositoryItemHeader = ({ ownerAvatarUrl, fullName, description, language 
       <StyledText fontWeight='bold'>{fullName}</StyledText>
       <StyledText color='secondary'>{description}</StyledText>
       <StyledText style={styles.language}>{language}</StyledText>
+      {/* <Button title='Claudio' accessibilityLabel='Claudio' disabled="false"/> */}
     </View>
   </View>
 )
@@ -28,7 +35,8 @@ const styles = StyleSheet.create({
   container: {
     padding: 20,
     paddingVertical: 5,
-    // width: "50%"
+    // flexDirection: "column"
+    width: screenwidth,
   },
   language: {
     padding: 4,
@@ -40,8 +48,8 @@ const styles = StyleSheet.create({
     overflow: 'hidden'
   },
   image: {
-    width: 48,
-    height: 48,
+    width: imageWidth,
+    height: imageWidth,
     borderRadius: 4
   }
 })
