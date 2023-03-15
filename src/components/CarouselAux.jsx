@@ -17,9 +17,9 @@ import repositories from '../data/repositories.js'
 // ];
 const { width } = Dimensions.get('window');
 console.log("width screen", width);
-let imageWidth = 0.5 * width;
-let screenwidth = "100%"
-if (width >= 1000) {imageWidth = width * 0.3; screenwidth = "50%";}
+let imageWidth = 150;
+// let screenwidth = "100%"
+// if (width >= 1000) {imageWidth = width * 0.3; screenwidth = "50%";}
 
 const CarouselAux = () => {
   const [activeIndex, setActiveIndex] = useState(0);

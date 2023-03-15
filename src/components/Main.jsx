@@ -14,6 +14,8 @@ const Main = () => {
       <AppBar />       
         <Routes>
           <Route path='/' element= {<RepositoryList />} />
+          <Route path='/claudio' element= {<Carousel />} />
+
           <Route path='/signin' element= 
           {
             // <Carousel/>

@@ -49,6 +49,8 @@ const AppBar = () => {
       <ScrollView showsHorizontalScrollIndicator={false} horizontal style={styles.scroll}>
         <AppBarTab to='/'>Repositories</AppBarTab>
         <AppBarTab to='/signin'>Sign In</AppBarTab>
+        <AppBarTab to='/claudio'>SoyClaudio</AppBarTab>
+
       </ScrollView>
     </View>
   )

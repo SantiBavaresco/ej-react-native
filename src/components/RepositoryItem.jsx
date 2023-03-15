@@ -19,6 +19,8 @@ const RepositoryItemHeader = ({ ownerAvatarUrl, fullName, description, language 
       <StyledText fontWeight='bold'>{fullName}</StyledText>
       <StyledText color='secondary'>{description}</StyledText>
       <StyledText style={styles.language}>{language}</StyledText>
+      <StyledText color="claudioElMejor">Soy claudio</StyledText>
+
       {/* <Button title='Claudio' accessibilityLabel='Claudio' disabled="false"/> */}
     </View>
   </View>

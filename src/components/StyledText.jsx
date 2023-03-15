@@ -15,6 +15,9 @@ const styles = StyleSheet.create({
   colorSecondary: {
     color: theme.colors.textSecondary
   },
+  colorOfTheChampion:{
+    color: theme.colors.claudio
+  },
   bold: {
     fontWeight: theme.fontWeights.bold
   },
@@ -32,6 +35,7 @@ export default function StyledText ({ align, children, color, fontSize, fontWeig
     align === 'center' && styles.textAlignCenter,
     color === 'primary' && styles.colorPrimary,
     color === 'secondary' && styles.colorSecondary,
+    color === 'claudioElMejor' && styles.colorOfTheChampion,
     fontSize === 'subheading' && styles.subheading,
     fontWeight === 'bold' && styles.bold,
     style
