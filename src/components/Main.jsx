@@ -3,6 +3,8 @@ import { Text, View } from 'react-native'
 import RepositoryList from './RepositoryList.jsx'
 import Carousel from "./CarouselComponent.jsx"
 import CarouselAux from "./CarouselAux.jsx"
+import Map from "./Map.jsx"
+
 
 import AppBar from './AppBar.jsx'
 import { Redirect, Route, Routes } from 'react-router-native'
@@ -15,6 +17,8 @@ const Main = () => {
         <Routes>
           <Route path='/' element= {<RepositoryList />} />
           <Route path='/claudio' element= {<Carousel />} />
+          <Route path='/mapview' element= {<Map />} />
+
 
           <Route path='/signin' element= 
           {

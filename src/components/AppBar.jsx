@@ -50,6 +50,8 @@ const AppBar = () => {
         <AppBarTab to='/'>Repositories</AppBarTab>
         <AppBarTab to='/signin'>Sign In</AppBarTab>
         <AppBarTab to='/claudio'>SoyClaudio</AppBarTab>
+        <AppBarTab to='/mapview'>Map View</AppBarTab>
+
 
       </ScrollView>
     </View>
