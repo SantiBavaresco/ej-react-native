@@ -29,10 +29,10 @@ export const mapStyle = [
       elementType: 'geometry.fill',
       stylers: [
         {
-          color: '#ffffff',
+          color: '#512e2e',
         },
         {
-          lightness: 17,
+          lightness: 37,
         },
       ],
     },
@@ -56,10 +56,10 @@ export const mapStyle = [
       elementType: 'geometry',
       stylers: [
         {
-          color: '#ffffff',
+          color: '#ff5b4f',
         },
         {
-          lightness: 18,
+          lightness: 48,
         },
       ],
     },
@@ -68,10 +68,10 @@ export const mapStyle = [
       elementType: 'geometry',
       stylers: [
         {
-          color: '#ffffff',
+          color: '#ff9383',
         },
         {
-          lightness: 16,
+          lightness: 58,
         },
       ],
     },
@@ -80,7 +80,7 @@ export const mapStyle = [
       elementType: 'geometry',
       stylers: [
         {
-          color: '#f5f5f5',
+          color: '	#ff0092',
         },
         {
           lightness: 21,
@@ -120,7 +120,7 @@ export const mapStyle = [
           saturation: 36,
         },
         {
-          color: '#333333',
+          color: '#512e2e',
         },
         {
           lightness: 40,

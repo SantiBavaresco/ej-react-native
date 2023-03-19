@@ -7,7 +7,7 @@ const RepositoryList = () => {
   return (
     <FlatList 
       data={repositories} // de donde saca los datos para hacer la lista
-      ItemSeparatorComponent={() => <Text> claudiop</Text>} // separa cada card con un espacio "Text"
+      ItemSeparatorComponent={() => <Text> </Text>} // separa cada card con un espacio "Text"
       renderItem={({ item: repo }) => (
         <RepositoryItem {...repo} />
       )}

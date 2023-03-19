@@ -79,7 +79,7 @@ function Pagination({ index }) {
   );
 }
 
-export default function Carousel() {
+export default function CarouselComponent() {
   const [index, setIndex] = useState(0);
   const indexRef = useRef(index);
   indexRef.current = index;

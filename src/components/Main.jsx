@@ -1,9 +1,11 @@
 import React from 'react'
 import { Text, View } from 'react-native'
 import RepositoryList from './RepositoryList.jsx'
-import Carousel from "./CarouselComponent.jsx"
+import CarouselComponent from "./CarouselComponent.jsx"
 import CarouselAux from "./CarouselAux.jsx"
 import Map from "./Map.jsx"
+// import Mapita from "./Mapita.jsx"
+
 
 
 import AppBar from './AppBar.jsx'
@@ -16,7 +18,7 @@ const Main = () => {
       <AppBar />       
         <Routes>
           <Route path='/' element= {<RepositoryList />} />
-          <Route path='/claudio' element= {<Carousel />} />
+          <Route path='/claudio' element= {<CarouselComponent />} />
           <Route path='/mapview' element= {<Map />} />
 
 

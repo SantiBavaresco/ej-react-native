@@ -22,14 +22,20 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "config":{
-        "googleMaps":{
+      "config": {
+        "googleMaps": {
           "apiKey": "AIzaSyA8wHVl7x6tJiALwmMYUL5h_l14X74f_A8"
         }
-      }
+      },
+      "package": "com.santibavaresco.ejreactnative"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "bf68803b-8fba-4f2e-a463-fc7fbeaebfa5"
+      }
     }
   }
 }
