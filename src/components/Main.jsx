@@ -3,6 +3,8 @@ import { Text, View } from 'react-native'
 import RepositoryList from './RepositoryList.jsx'
 import CarouselComponent from "./CarouselComponent.jsx"
 import CarouselAux from "./CarouselAux.jsx"
+import CarouselPagerView from "./CarouselPagerView"
+
 import Map from "./Map.jsx"
 // import Mapita from "./Mapita.jsx"
 
@@ -20,7 +22,7 @@ const Main = () => {
           <Route path='/' element= {<RepositoryList />} />
           <Route path='/claudio' element= {<CarouselComponent />} />
           <Route path='/mapview' element= {<Map />} />
-
+          <Route path='/pagerview' element={<CarouselPagerView/>} />
 
           <Route path='/signin' element= 
           {

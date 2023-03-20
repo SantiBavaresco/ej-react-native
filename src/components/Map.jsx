@@ -37,7 +37,8 @@ export default function App() {
     },[])
 
     async function getLocationPermission(){ // esto se puede aplicar en un useEffect para hcerlo en tiempo real
-        let { status } = await Location.requestForegroundPermissionsAsync();
+        let { status } = await Location.requestForegroundPermissionsAsync(); 
+        // pide permiso para acceder a la ubicacion del usuario
         if(status !== "granted"){
             alert("Permision denied")
             return;
@@ -90,16 +91,16 @@ return (
         <MapViewDirections 
             origin={origin}
             destination={destination}
-            apikey={"AIzaSyA8wHVl7x6tJiALwmMYUL5h_l14X74f_A8"} // apikey de santi
+            apikey={"AIzaSyA8wHVl7x6tJiALwmMYUL5h_l14X74f_A8"} // apikey de googlemaps de santi
             strokeColor="blue"
             strokeWidth={5}
         />
 
-        {/* <Polyline // crea una poligono
-            coordinates={[origin, destination]}
+        <Polyline // crea una poligono
+            coordinates={[origin, destination, {latitude : -33.744689,longitude : -61.986766}, {latitude : -33.744589,longitude : -61.985766}]}
             strokeColor="orange"
             strokeWidth={5}
-        /> */}
+        />
       </MapView>
     </View>
 

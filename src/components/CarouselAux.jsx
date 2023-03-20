@@ -60,6 +60,8 @@ const CarouselAux = () => {
       <TouchableOpacity style={styles.arrowButton} onPress={handleNext}>
         <Text style={styles.arrowButtonText}>{'>'}</Text>
       </TouchableOpacity>
+
+
     </View>
   );
 };
